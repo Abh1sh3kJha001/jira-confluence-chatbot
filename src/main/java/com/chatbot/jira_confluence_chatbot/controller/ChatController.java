@@ -15,4 +15,9 @@ public class ChatController {
     public String chat(@RequestBody ChatRequest request) {
         return "You said: " + request.getMessage();
     }
+
+    @GetMapping("/bye")
+    public String sayBye() {
+        return "Bye ";
+    }
 }
